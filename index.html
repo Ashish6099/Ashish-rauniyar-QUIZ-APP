@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="user">
+        <img src="quiz logo.png" alt="testbook" style="width: 15%; margin: 2vw auto;">
+        <h1>Hello user!</h1>
+        <p><b>Enter Your Name To Continew The Quiz.</b></p>
+        <input type="text" name="name" id="playername" placeholder="Enter your name...">
+        <button type="submit" onclick="{EnterName();}">ENTER</button>
+    
+        <p2>You'll have 10 seconds to answer each questions</p2>
+    </div>
+    <hr>
+    <div class="catg">
+        <h2>Select Category</h2>
+        <div class="catg1">
+            <a href="pipe.html" class="quz">
+                Pipes And Cisterns
+            </a>
+            <a href="prob.html" class="quz">
+                Probability
+            </a>
+        </div>
+        <div class="catg2">
+            <a href="age.html" class="quz">
+                Problems On Age
+            </a>
+            <a href="profit.html" class="quz">
+                Profit And Loss
+            </a>
+        </div>
+        <script>
+            function EnterName() {
+
+                let name = document.getElementById("playername").value;
+                console.log(name);
+                localStorage.setItem('name', name)
+                
+                alert("Select your category");
+
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
